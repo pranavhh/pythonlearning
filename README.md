@@ -1,3 +1,5 @@
 # pythonlearning
 
-This is just a private repository which I use to upload my python-learning files which are mostly in .ipynb or .py format.
+This is just a private repository which I use to upload my python-learning files which are mostly in .ipynb or .py format
+
+-------------------ARCHIVED-----------------------------SEE NEW REPOSITORY IN MY PROFILE--------------------------------------------
