@@ -13,15 +13,15 @@ choice = ''
 while choice != "C":
     choice = input("Enter your choice (A, or B): ").upper()
 
-    
+
 
     if choice == "A":
-        
+
         User_Name = input("Hi! Please enter your name, employee: ").lower()
         Pw = getpass.getpass("Enter your Password: ")
 
         if User_Name in StoreLoginEmployeesaandtherpassswords:
-            if StoreLoginEmployeesaandtherpassswords[User_Name] == Pw:
+            if StoreLoginEmployeesaandtherpassswords[User_Name] == Pw
                 print(f"Welcome, {User_Name}!\n")
                 print ("Check out the customers, to do that, punch the items code down below:")
                 Codes ={
@@ -36,6 +36,21 @@ while choice != "C":
                     "S1":"Pen",
                     "S2":"Pencil"
                 }
+                print (Codes)
+                chiice = ""
+                while chiice == "A"::
+                  choice = input("Enter your choice:A if you want too add an item and B if you have finished entering all the items")
+                  if chiice == "A":
+                    BuyerBought=input("Enter the code:")
+                    Charge=input("The price of the item is:")
+                    Totalpricesofar = Totalpricesofar + Charge
+                    print (f"The total price so far is {Totalpricesofar}")
+
+                  elif chiice == "B"
+                  print (f"The customer has to pay {Totalpricesofar}")
+
+                  
+
             else:
                 print("Incorrect password.")
         else:
