@@ -1,0 +1,50 @@
+import getpass
+StoreLoginEmployeesaandtherpassswords = {
+    "Arun": "PrimeMart",
+    "Naveen":"Giant"
+}
+
+
+print('''
+Hi Fairdeal employee
+Please A. Sign In or B. Sign Out  using the correspoding leter''')
+
+choice = ''
+while choice != "C":
+    choice = input("Enter your choice (A, or B): ").upper()
+
+    
+
+    if choice == "A":
+        
+        User_Name = input("Hi! Please enter your name, employee: ").lower()
+        Pw = getpass.getpass("Enter your Password: ")
+
+        if User_Name in StoreLoginEmployeesaandtherpassswords:
+            if StoreLoginEmployeesaandtherpassswords[User_Name] == Pw:
+                print(f"Welcome, {User_Name}!\n")
+                print ("Check out the customers, to do that, punch the items code down below:")
+                Codes ={
+                    "Elec1"  : "Mouse",
+                    "Elec2"  : "Monitor",
+                    "Elec3" : "Keyboard",
+                    "HH1" : "Bedspread",
+                    "HH2" : "Blanket",
+                    "HH3" : "Fridge",
+                    "HH4" : "Table",
+                    "HH5":"Pillows",
+                    "S1":"Pen",
+                    "S2":"Pencil"
+                }
+            else:
+                print("Incorrect password.")
+        else:
+            print("Password/Name wrong, please check them.")
+
+    elif choice == "B":
+        # Sign Out
+        print("Thank you for being a loyal employee. Goodbye!")
+        break
+
+    else:
+        print("Invalid choice. Please enter A, B, or C.\n")
